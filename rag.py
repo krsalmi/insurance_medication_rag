@@ -41,8 +41,8 @@ def get_agent(obj_retriever: Optional, llm: Optional, system_prompt: str = None)
         llm=llm, 
         system_prompt=""" \
         You are an agent designed to evaluate and modify prescription texts 
-        to meet specific insurance criteria. You will receive the name of a 
-        drug, the name of a disease, and a prescription text. Your task is to 
+        to meet specific insurance criteria. You will receive an input with 4 fields:
+        Insurance, Medication, Disease, Perscription text. Your task is to 
         check if the prescription meets the criteria for the drug related to 
         the disease. If the criteria are not met, propose modifications to the 
         text so that it aligns with the criteria. Use square brackets to indicate
