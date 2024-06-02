@@ -1,9 +1,11 @@
 # app.py
 from flask import Flask, request, jsonify
 from rag import initialize_agent
+from flask_cors import CORS
 
 app = Flask(__name__)
 agent = initialize_agent()
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 
 @app.route('/api/generate', methods=['POST'])
 def generate():
