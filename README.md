@@ -11,19 +11,7 @@ The system suggests minimal edits to ensure prescriptions are valid for insuranc
 * Returns proposed edits to prescription text, with changes highlighted in square brackets `[like this]`.
 * Supports document-level vector search + summarization tools for reasoning over multiple papers.
 
----
-
-## 🛠️ Tech Stack
-
-* **Python 3.10+**
-* **Flask** (API server, CORS enabled)
-* **LlamaIndex** (document indexing + agent framework)
-* **OpenAI API** (LLM + embeddings)
-* **PDF-based retrieval** (vector search + summarization over docs/)
-
----
-
-## ⚡ Getting Started
+## Getting Started
 
 ### 1. Clone this repo
 
@@ -63,7 +51,7 @@ The API will start on `http://localhost:3000`.
 
 ---
 
-## 📡 API Usage
+## API Usage
 
 ### Endpoint: `POST /api/generate`
 
